@@ -5,6 +5,8 @@ I've struggled to find a notetaking app I like. Most have poor keyboard support,
 
 Using Guard and vim's autocmds this lets me tuck my notes into a tmux window next to my code, dispays live HTML previews, uses familiar keybindings for editing, is searchable with fzf and is stored in vanilla markdown files.
 
+![screenshot](screenshot.png)
+
 ## Dependencies
 - [Ruby](https://github.com/ruby/ruby)
 - [Pandoc](https://github.com/jgm/pandoc)
