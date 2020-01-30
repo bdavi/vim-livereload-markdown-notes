@@ -10,12 +10,14 @@
 <body>
 <p>Set up SSH on a VirtualBox vm</p>
 <h2 id="setup">Setup</h2>
-<p>On the vm:</p>
+<p>Power off the vm.</p>
+<p>On the host run:</p>
 <pre><code>VBoxManage modifyvm vm_name --natpf1 &quot;ssh,tcp,,3022,,22&quot;</code></pre>
-<p>On the host:</p>
-<pre><code>sudo apt-get install openssh-server</code></pre>
+<p>On the vm run:</p>
+<pre><code>sudo apt-get install openssh-server
+sudo ufw allow 22</code></pre>
 <h2 id="to-connect">To connect</h2>
-<p>Run on the host:</p>
+<p>On the host run:</p>
 <pre><code>ssh -p 3022 user@127.0.0.1</code></pre>
 </body>
 </html>
