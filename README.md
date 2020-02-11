@@ -25,7 +25,7 @@ $ bundle install
 ```
 function! PreviewMarkdown()
   if filereadable('preview.html')
-    !pandoc %:p -f markdown_github -t html -s -o preview.html
+    !pandoc %:p -f gfm -t html -s -o preview.html --metadata pagetitle="Preview"
   endif
 endfunction
 
