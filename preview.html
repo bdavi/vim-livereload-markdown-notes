@@ -13,19 +13,7 @@
   </style>
 </head>
 <body>
-<h2 id="list-drives">List Drives</h2>
-<pre><code>sudo fdisk -l
-</code></pre>
-<h2 id="create-mount-point">Create Mount Point</h2>
-<p>First create folder to mount:</p>
-<pre><code>mkdir /home/mount_here
-</code></pre>
-<p>Then mount:</p>
-<pre><code>sudo mount dev/sdb1 /home/mount_here
-</code></pre>
-<p>Add <code>-t</code> to specify type (i.e. ext4)</p>
-<h2 id="unmount">Unmount</h2>
-<pre><code>sudo umount dev/sdb1
-</code></pre>
+<h2 id="recursively-copy-files-by-type">Recursively copy files by type</h2>
+<p>find /the/foler/to/copy/from/ -name '*.ext' -exec cp {} /the/destination/ ;</p>
 </body>
 </html>
